@@ -19,12 +19,17 @@ module OmniAuth
         {
           'name' => raw_properties['nickname'],
           'image' => raw_properties['thumbnail_image'],
-          'email' => raw_kakao_account['email']
+          'email' => raw_kakao_account['email'],
+          'birthday' => raw_kakao_account['birthday'],
+          'gender' => raw_kakao_account['gender']
         }
       end
 
       extra do
-        {'properties' => raw_properties}
+        {
+          'properties' => raw_properties,
+          'raw_info' => raw_kakao_account
+        }
       end
 
       def initialize(app, *args, &block)
