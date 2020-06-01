@@ -28,7 +28,7 @@ GEM
       oauth2 (~> 1.1)
       omniauth (~> 1.9)
     rack (1.6.13)
-    rack-protection (1.5.3)
+    rack-protection (1.5.5)
       rack
     shotgun (0.9)
       rack (>= 1.0)
